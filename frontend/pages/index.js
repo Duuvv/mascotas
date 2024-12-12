@@ -13,7 +13,7 @@ const Home = () => {
   // Efecto para obtener las recetas del backend
   useEffect(() => {
     // Realizar la solicitud al backend para obtener recetas
-    fetch('http://localhost:5000/api/recipes') // Asegúrate de que esta URL esté correcta
+    fetch('https://mascotas-ct2c.onrender.com') // Asegúrate de que esta URL esté correcta
       .then((response) => response.json())
       .then((data) => {
         setRecipes(data); // Guardamos las recetas en el estado
